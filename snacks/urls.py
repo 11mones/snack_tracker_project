@@ -4,6 +4,7 @@ from .views import SnacksListView,SnackDetailsView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',SnacksListView.as_view(), name='things'),
-    path('<pk>/',SnackDetailsView.as_view(), name='thing_details')
+    path('',SnacksListView.as_view(), name='snacks'),
+    path('<int:pk>/', SnackDetailsView.as_view(), name='snack_details')
+
 ]

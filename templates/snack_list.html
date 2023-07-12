@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="page-title">Our Snacks</h1>
+        <ul class="snack-list">
+            {% for x in data %}
+                <li class="snack-item">
+                    <a href="{% url 'snack_details' x.id %}" class="snack-link">
+                        <h2 class="snack-name">{{ x.name }}</h2>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
