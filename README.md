@@ -1,6 +1,6 @@
 ## LAB - Class 27
 
-**Project: snacks_crud_project**
+**Project: snack_tracker_project**
 
 
 **Author: Mones saeed**
